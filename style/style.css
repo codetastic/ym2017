@@ -147,6 +147,8 @@ li {
     display: grid;
     justify-items: stretch;
     grid-gap: 0px;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, 50px [name-start]) repeat(8, auto [header-1-start]);
     grid-template-areas:
     "name"
     "contact"
@@ -169,7 +171,7 @@ Then with media queries, I amend up.
 Alternatively I would design default for desktop and then via media queries amend down. */
 
     @media
-    only screen and (min-width: 300px)  {
+    only screen and (min-width: 500px)  {
     .wrapper {
         background-color: red;
         grid-template-columns: 100%;
